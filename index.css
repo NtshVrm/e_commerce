@@ -246,7 +246,53 @@ body {
 .review-container {
   background-color: lightblue;
   grid-area: review;
+  display: grid;
+  grid-template-rows: 0.1fr 0.9fr;
+  grid-template-areas: 
+  "review-heading"
+  "review"
+  ;
+  grid-gap: 1rem;
+  padding: 1rem;
 }
+
+.review-heading{
+    grid-area: review-heading;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    background-color: red;
+}
+
+.review{
+    grid-area: review;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.review-item{
+    display: flex;
+    flex-flow: column;
+    background-color: grey;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.review-image{
+    align-self: flex-start;
+    font-size: 2rem;
+}
+.review-desc{
+    font-size: 1rem;
+}
+.review-name{
+    font-size: 1.2rem;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
 
 /* FOOTER STLYING */
 .footer {
