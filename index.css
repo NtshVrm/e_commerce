@@ -1,0 +1,55 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    display:grid;
+    grid-template-rows: 0.5fr 4fr 0.5fr;
+    grid-template-areas: 
+    "navbar"
+    "home"
+    "footer"
+    ;
+    grid-gap: 1rem 0;
+    min-height:100vh;
+}
+
+.navbar{
+    background-color: aqua;
+    grid-area: navbar;
+}
+
+.home-container{
+    background-color: lightcoral;
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    "banner"
+    "category"
+    "feature"
+    "team"
+    "review"
+    ;
+    grid-gap: 1rem 0;
+    grid-area:home;
+}
+
+.banner-image{
+    background-color: cyan;
+    grid-area: banner;
+}
+
+.category-container{
+    background-color: lightpink;
+    grid-area:category;
+}
+
+.feature-container{
+
+}
+
+.footer{
+    background-color: lightgreen;
+    grid-area: footer;
+}
