@@ -1,66 +1,255 @@
-*{
-    padding:0;
-    margin:0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-body{
-    display:grid;
-    grid-template-rows: 0.5fr 4fr 0.5fr;
-    grid-template-areas: 
+body {
+  display: grid;
+  grid-template-rows: 0.5fr 4fr 0.5fr;
+  grid-template-areas:
     "navbar"
     "home"
-    "footer"
-    ;
-    grid-gap: 1rem 0;
-    min-height:100vh;
+    "footer";
+  grid-gap: 1rem 0;
+  min-height: 100vh;
 }
 
-.navbar{
-    background-color: aqua;
-    grid-area: navbar;
+.navbar {
+  background-color: aqua;
+  grid-area: navbar;
+  max-height: 100px;
 }
 
-.home-container{
-    background-color: lightcoral;
-    display: grid;
-    grid-template-rows: repeat(5,1fr);
-    grid-template-areas: 
+.home-container {
+  background-color: lightcoral;
+  display: grid;
+  /* grid-template-rows: repeat(5,1fr); */
+  grid-template-areas:
     "banner"
     "category"
     "feature"
     "team"
-    "review"
-    ;
-    grid-gap: 1rem 0;
-    grid-area:home;
+    "review";
+  grid-gap: 1rem;
+  grid-area: home;
 }
 
-.banner-image{
-    background-color: lightblue;
-    grid-area: banner;
+/* BANNER STYLING */
+.banner-container {
+  background-color: lightblue;
+  grid-area: banner;
+  display: flex;
 }
 
-.category-container{
-    background-color: lightblue;
-    grid-area:category;
+.banner-image {
+  object-fit: fill;
+  max-height: 400px;
+  width: 100%;
+  /* filter: opacity(20%); */
 }
 
-.feature-container{
-    background-color: lightblue;
-    grid-area: feature;
+/* .banner-image:hover{
+    opacity: 70%;
+} */
+
+/* CATEGORY STYLING */
+.category-container {
+  background-color: lightblue;
+  grid-area: category;
 }
 
-.team-container{
-    background-color: lightblue;
-    grid-area: team;
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: blueviolet;
 }
 
-.review-container{
-    background-color: lightblue;
-    grid-area: review;
+.category-title {
+  font-size: 1.5rem;
 }
 
-.footer{
-    background-color: lightgreen;
-    grid-area: footer;
+.category-action {
+  display: flex;
+  border: none;
+  background-color: transparent;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.category-list {
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "large small"
+    "large small";
+  grid-gap: 1rem 1rem;
+  padding: 1rem;
+}
+
+.item-large {
+  grid-area: large;
+  background-color: blue;
+}
+
+.item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-img-large {
+  width: 100%;
+  max-height: 420px;
+  object-fit: fill;
+}
+
+.item-title {
+  background-color: red;
+  position: absolute;
+}
+
+.item-small {
+  grid-area: small;
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+  justify-content: space-evenly;
+  background-color: blue;
+}
+
+.item-img-small {
+  width: 100%;
+  max-height: 200px;
+  object-fit: fill;
+}
+
+/* FEATURE STYLING */
+
+.feature-container {
+  background-color: lightblue;
+  grid-area: feature;
+  display: grid;
+  grid-template-rows: 0.1fr 0.9fr;
+  grid-template-areas:
+    "feature-heading"
+    "feature";
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.feature-heading {
+  grid-area: feature-heading;
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  background-color: red;
+}
+
+.feature {
+  grid-area: feature;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.feature-item {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: blue;
+  padding: 1rem;
+}
+
+.feature-image {
+  font-size: 2rem;
+}
+
+.feature-title {
+  font-size: 2rem;
+}
+
+.feature-desc {
+  font-size: 1rem;
+}
+
+/* TEAMS STYLING */
+.team-container {
+  background-color: lightblue;
+  grid-area: team;
+  display: grid;
+  grid-template-rows: 0.1fr 2fr 1fr;
+  grid-template-areas:
+    "team-heading"
+    "team-list-large"
+    "team-list-small";
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.team-heading {
+  grid-area: team-heading;
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  background-color: red;
+}
+
+.team-list-large {
+  grid-area: team-list-large;
+  background-color: blue;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  height: fit-content;
+}
+
+.team-list-small {
+  grid-area: team-list-small;
+  background-color: blue;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1rem;
+  height: fit-content;
+}
+
+.team-item {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.team-image-large {
+  width: 100%;
+  max-height: 400px;
+  object-fit: fill;
+}
+
+.team-image-small {
+  width: 100%;
+  max-height: 200px;
+  object-fit: fill;
+}
+
+.team-title {
+  position: absolute;
+  background-color: red;
+}
+
+/* REVIEWS STYLING */
+.review-container {
+  background-color: lightblue;
+  grid-area: review;
+}
+
+/* FOOTER STLYING */
+.footer {
+  background-color: lightgreen;
+  grid-area: footer;
 }

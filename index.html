@@ -1,46 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css" />
+    <script
+      src="https://kit.fontawesome.com/f80c68505b.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
-</head>
+  </head>
 
-
-<body>
-
-    <header class="navbar">
-        navbar
-    </header>
+  <body>
+    <header class="navbar">navbar</header>
 
     <main class="home-container">
+      <!-- BANNER CONATINER -->
+      <div class="banner-container">
+        <img
+          class="banner-image"
+          src="https://picsum.photos/1000/400"
+          alt="banner-image"
+        />
+      </div>
 
-        <div class="banner-image">
-            banner image
+      <!-- CATEGORY CONTAINER -->
+      <div class="category-container">
+        <div class="category-header">
+          <div class="category-title">Shop by Category</div>
+          <button class="category-action">
+            Browse all categories<i class="fas fa-arrow-right"></i>
+          </button>
         </div>
 
-        <div class="category-container">
-            categories
+        <div class="category-list">
+          <div class="item-large">
+            <div class="item">
+              <img
+                class="item-img-large"
+                src="https://picsum.photos/400/400"
+                alt="cat-large-img"
+              />
+              <div class="item-title">Hoodies</div>
+            </div>
+          </div>
+
+          <div class="item-small">
+            <div class="item">
+              <img
+                class="item-img-small"
+                src="https://picsum.photos/400/200"
+                alt=""
+              />
+              <div class="item-title">Caps</div>
+            </div>
+
+            <div class="item">
+              <img
+                class="item-img-small"
+                src="https://picsum.photos/400/200"
+                alt=""
+              />
+              <div class="item-title">T-shirts</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FEATURE CONTAINER -->
+      <div class="feature-container">
+        <div class="feature-heading">WHY US?</div>
+
+        <div class="feature">
+          <div class="feature-item">
+            <div class="feature-image"><i class="fas fa-exchange-alt"></i></div>
+            <div class="feature-title">Free Returns</div>
+            <div class="feature-desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              voluptatem quibusdam aut incidunt quas voluptates possimus iusto
+              molestiae blanditiis, harum nostrum ratione impedit repudiandae
+              deleniti hic ad illo labore numquam!
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-image">
+              <i class="fas fa-shipping-fast"></i>
+            </div>
+            <div class="feature-title">Fast Shipping</div>
+            <div class="feature-desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              voluptatem quibusdam aut incidunt quas voluptates possimus iusto
+              molestiae blanditiis, harum nostrum ratione impedit repudiandae
+              deleniti hic ad illo labore numquam!
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-image"><i class="fas fa-percentage"></i></div>
+            <div class="feature-title">Amazing Discounts</div>
+            <div class="feature-desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              voluptatem quibusdam aut incidunt quas voluptates possimus iusto
+              molestiae blanditiis, harum nostrum ratione impedit repudiandae
+              deleniti hic ad illo labore numquam!
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-image"><i class="fas fa-globe-asia"></i></div>
+            <div class="feature-title">Eco Friendly</div>
+            <div class="feature-desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              voluptatem quibusdam aut incidunt quas voluptates possimus iusto
+              molestiae blanditiis, harum nostrum ratione impedit repudiandae
+              deleniti hic ad illo labore numquam!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEAMS CONTAINER -->
+      <div class="team-container">
+        <div class="team-heading">MEET THE TEAMS</div>
+
+        <div class="team-list-large">
+          <div class="team-item">
+            <img class="team-image-large" src="https://picsum.photos/400/400" />
+            <div class="team-title">Redbull</div>
+          </div>
+          <div class="team-item">
+            <img class="team-image-large" src="https://picsum.photos/400/400" />
+            <div class="team-title">Mercedes</div>
+          </div>
+          <div class="team-item">
+            <img class="team-image-large" src="https://picsum.photos/400/400" />
+            <div class="team-title">Ferrari</div>
+          </div>
+          <div class="team-item">
+            <img class="team-image-large" src="https://picsum.photos/400/400" />
+            <div class="team-title">McLaren</div>
+          </div>
         </div>
 
-        <div class="feature-container">
-            WHY US CONTAINER
+        <div class="team-list-small">
+          <div class="team-item">
+            <img class="team-image-small" src="https://picsum.photos/400/400" />
+            <div class="team-title">Alpine</div>
+          </div>
+          <div class="team-item">
+            <img class="team-image-small" src="https://picsum.photos/400/400" />
+            <div class="team-title">AlphaTauri</div>
+          </div>
+          <div class="team-item">
+            <img class="team-image-small" src="https://picsum.photos/400/400" />
+            <div class="team-title">Aston Martin</div>
+          </div>
+          <div class="team-item">
+            <img class="team-image-small" src="https://picsum.photos/400/400" />
+            <div class="team-title">Alfa Romeo</div>
+          </div>
+          <div class="team-item">
+            <img class="team-image-small" src="https://picsum.photos/400/400" />
+            <div class="team-title">Redbull</div>
+          </div>
+          <div class="team-item">
+            <img class="team-image-small" src="https://picsum.photos/400/400" />
+            <div class="team-title">Redbull</div>
+          </div>
         </div>
+      </div>
 
-        <div class="team-container">
-            teams container
-        </div>
-
-        <div class="review-container">
-            review container
-        </div>
+      <!-- REVIEW CONTAINER -->
+      <div class="review-container">review container</div>
     </main>
 
-    <footer class="footer">
-        footer
-    </footer>
-    
-</body>
+    <footer class="footer">footer</footer>
+  </body>
 </html>
