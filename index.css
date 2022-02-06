@@ -1,29 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
 * {
   padding: 0;
   margin: 0;
 }
 
+
 body {
   display: grid;
-  grid-template-rows: 0.5fr 4fr 0.5fr;
+  grid-template-rows: 0.3fr 4fr;
   grid-template-areas:
     "navbar"
-    "home"
-    "footer";
-  grid-gap: 1rem 0;
-  min-height: 100vh;
+    "home";
+  grid-gap: 1rem;
 }
 
 .navbar {
+    display:flex;
   background-color: aqua;
   grid-area: navbar;
   max-height: 100px;
+  font-size: 2rem;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-between;
 }
+
+.nav-brand{
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-logo{
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+}
+
+.nav-name{
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.searchbar{
+    display: flex;
+    background-color: red;
+    align-items: center;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    gap: 1rem;
+    min-width: fit-content
+}
+
+.search-logo{
+    font-size: 1.5rem;
+}
+
+.search-input{
+    border:none;
+    border-radius: 1rem;
+    min-height: 2rem;
+}
+
+.nav-icons{
+    display: flex;
+    gap: 3rem;
+    
+}
+
+.icon{
+    text-decoration: none;
+    color: black;
+}
+
+
 
 .home-container {
   background-color: lightcoral;
   display: grid;
-  /* grid-template-rows: repeat(5,1fr); */
   grid-template-areas:
     "banner"
     "category"
@@ -297,5 +351,55 @@ body {
 /* FOOTER STLYING */
 .footer {
   background-color: lightgreen;
-  grid-area: footer;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.footer-docs{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gray;
+}
+
+.doc-item{
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+}
+
+.footer-social{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: gray;
+}
+
+.social-item{
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+    font-size: 2rem;    
+}
+
+.sep-item{
+    color: black;
+    font-size: 2rem;
+}
+
+.pay-item{
+    color:black;
+    font-size: 1.5rem;
+}
+
+.footer-copyright{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gray;
 }
