@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 
 * {
   padding: 0;
   margin: 0;
 }
-
 
 body {
   display: grid;
@@ -17,7 +15,7 @@ body {
 }
 
 .navbar {
-    display:flex;
+  display: flex;
   background-color: aqua;
   grid-area: navbar;
   max-height: 100px;
@@ -27,53 +25,50 @@ body {
   justify-content: space-between;
 }
 
-.nav-brand{
-    display: flex;
-    gap: 1rem;
+.nav-brand {
+  display: flex;
+  gap: 1rem;
 }
 
-.nav-logo{
-    height:50px;
-    width:50px;
-    border-radius: 50%;
+.nav-logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }
 
-.nav-name{
-    font-family: 'Shadows Into Light', cursive;
+.nav-name {
+  font-family: "Shadows Into Light", cursive;
 }
 
-.searchbar{
-    display: flex;
-    background-color: red;
-    align-items: center;
-    border-radius: 2rem;
-    padding: 0.5rem;
-    gap: 1rem;
-    min-width: fit-content
+.searchbar {
+  display: flex;
+  background-color: red;
+  align-items: center;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  gap: 1rem;
+  min-width: fit-content;
 }
 
-.search-logo{
-    font-size: 1.5rem;
+.search-logo {
+  font-size: 1.5rem;
 }
 
-.search-input{
-    border:none;
-    border-radius: 1rem;
-    min-height: 2rem;
+.search-input {
+  border: none;
+  border-radius: 1rem;
+  min-height: 2rem;
 }
 
-.nav-icons{
-    display: flex;
-    gap: 3rem;
-    
+.nav-icons {
+  display: flex;
+  gap: 3rem;
 }
 
-.icon{
-    text-decoration: none;
-    color: black;
+.icon {
+  text-decoration: none;
+  color: black;
 }
-
-
 
 .home-container {
   background-color: lightcoral;
@@ -302,51 +297,49 @@ body {
   grid-area: review;
   display: grid;
   grid-template-rows: 0.1fr 0.9fr;
-  grid-template-areas: 
-  "review-heading"
-  "review"
-  ;
+  grid-template-areas:
+    "review-heading"
+    "review";
   grid-gap: 1rem;
   padding: 1rem;
 }
 
-.review-heading{
-    grid-area: review-heading;
-    display: flex;
-    justify-content: center;
-    font-size: 3rem;
-    background-color: red;
+.review-heading {
+  grid-area: review-heading;
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  background-color: red;
 }
 
-.review{
-    grid-area: review;
-    background-color: blue;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
+.review {
+  grid-area: review;
+  background-color: blue;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
 }
 
-.review-item{
-    display: flex;
-    flex-flow: column;
-    background-color: grey;
-    padding: 1rem;
-    gap: 1rem;
+.review-item {
+  display: flex;
+  flex-flow: column;
+  background-color: grey;
+  padding: 1rem;
+  gap: 1rem;
 }
 
-.review-image{
-    align-self: flex-start;
-    font-size: 2rem;
+.review-image {
+  align-self: flex-start;
+  font-size: 2rem;
 }
-.review-desc{
-    font-size: 1rem;
+.review-desc {
+  font-size: 1rem;
 }
-.review-name{
-    font-size: 1.2rem;
-    font-weight: bold;
-    align-self: flex-end;
+.review-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  align-self: flex-end;
 }
-
 
 /* FOOTER STLYING */
 .footer {
@@ -357,49 +350,49 @@ body {
   padding: 1rem;
 }
 
-.footer-docs{
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: gray;
+.footer-docs {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: gray;
 }
 
-.doc-item{
-    text-decoration: none;
-    color:black;
-    cursor: pointer;
+.doc-item {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
 
-.footer-social{
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: space-around;
-    background-color: gray;
+.footer-social {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: gray;
 }
 
-.social-item{
-    text-decoration: none;
-    color:black;
-    cursor: pointer;
-    font-size: 2rem;    
+.social-item {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-size: 2rem;
 }
 
-.sep-item{
-    color: black;
-    font-size: 2rem;
+.sep-item {
+  color: black;
+  font-size: 2rem;
 }
 
-.pay-item{
-    color:black;
-    font-size: 1.5rem;
+.pay-item {
+  color: black;
+  font-size: 1.5rem;
 }
 
-.footer-copyright{
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: gray;
+.footer-copyright {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: gray;
 }
