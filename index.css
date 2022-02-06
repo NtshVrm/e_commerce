@@ -36,17 +36,28 @@ body{
 }
 
 .banner-image{
-    background-color: cyan;
+    background-color: lightblue;
     grid-area: banner;
 }
 
 .category-container{
-    background-color: lightpink;
+    background-color: lightblue;
     grid-area:category;
 }
 
 .feature-container{
+    background-color: lightblue;
+    grid-area: feature;
+}
 
+.team-container{
+    background-color: lightblue;
+    grid-area: team;
+}
+
+.review-container{
+    background-color: lightblue;
+    grid-area: review;
 }
 
 .footer{
