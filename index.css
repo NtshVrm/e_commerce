@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
-* {
-  padding: 0;
-  margin: 0;
-}
+
+@import url("/reset.css");
 
 :root{
   --primary-color: black;
@@ -24,6 +22,11 @@ body {
 
 main{
   font-family: 'Raleway', sans-serif;
+}
+
+.hidden{
+  display: none;
+  visibility: hidden;
 }
 
 
@@ -47,6 +50,35 @@ main{
   font-weight: bold;
 }
 
+.nav-brand{
+  width: 250px;
+  height: 60px;
+  position: relative;
+  background: var(--primary-color);
+}
+.nav-brand:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 30px solid white;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+}
+.nav-brand:before {
+  content: "";
+  position: absolute;
+  right: -30px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 30px solid var(--primary-color);
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+}
+
 .nav-logo {
   height: 50px;
   width: 50px;
@@ -56,13 +88,14 @@ main{
 
 .nav-name {
   font-family: "Shadows Into Light", cursive;
-  color: var(--nav-color);
+  color: white;
+  margin-left: 3rem;
 }
 
 .searchbar {
   display: flex;
   align-items: center;
-  border-radius: 2rem;
+  /* border-radius: 2rem; */
   padding: 0.5rem;
   gap: 1rem;
   min-width: fit-content;
