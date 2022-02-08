@@ -17,7 +17,7 @@ body {
   grid-template-areas:
     "navbar"
     "home";
-  grid-gap: 1rem;
+  /* grid-gap: 1rem; */
 }
 
 main{
@@ -136,7 +136,7 @@ main{
 }
 
 .home-container {
-  background-color: #f3f4f6;
+  background-color: #fee2e2;
   display: grid;
   grid-template-areas:
     "banner"
