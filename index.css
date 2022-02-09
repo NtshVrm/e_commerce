@@ -51,6 +51,11 @@ main{
   font-weight: bold;
 }
 
+.home-link{
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .nav-brand{
   width: 250px;
   height: 60px;
@@ -151,17 +156,32 @@ main{
 
 /* BANNER STYLING */
 .banner-container {
-  /* background-color: lightblue; */
   grid-area: banner;
   display: flex;
   padding: 1rem;
+  align-items: center;
+  justify-content: center;
 }
+
+.banner-text{
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bold;
+  color:  var(--primary-color);
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 
 .banner-image {
   object-fit: fill;
   max-height: 400px;
   width: 100%;
   filter: opacity(50%);
+  position: relative;
 }
 
 .banner-image:hover{
@@ -243,7 +263,7 @@ main{
   text-transform: uppercase;
   font-size: 3rem;
   font-weight: bold;
-  color:  #ef4444;
+  color:  var(--primary-color);
 }
 
 .item-small {
