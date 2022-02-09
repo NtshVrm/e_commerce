@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/pages/auth/auth.css">
+    <script
+      src="https://kit.fontawesome.com/f80c68505b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Sign In</title>
+</head>
+
+
+<body>
+    <header class="navbar">
+        <div class="nav-brand">
+            <img class="nav-logo hidden" src="https://picsum.photos/1000/400"></img>
+            <a class="home-link" href="/index.html"><div class="nav-name">SlipStream</div></a>
+        </div>
+        <div class="nav-icons">
+          <div class="searchbar">
+            <input class="search-input" type="search">
+            <div class="search-logo"><i class="fas fa-search"></i></div>
+          </div>
+            <a class="icon" href="/pages/wishlist/wishlist.html"><i class="far fa-heart"></i></a>
+            <a class="icon" href="#" ><i class="fas fa-shopping-bag"></i></a>
+            <a class="icon" href="/pages/auth/signin.html" ><i class="far fa-user"></i></a>
+        </div>
+    </header>
+    
+    <main class="login-container">
+
+        
+        <div class="sign-in-container">
+            <div class="sign-in-title">Sign In</div>
+            <div class="social-container">
+                <div class="social-heading"><div class="social-title">Sign in with</div></div>
+                <div class="social-button">
+                    <button class="login-item"><i class="fab fa-google"></i></button>
+                    <button class="login-item"><i class="fab fa-facebook"></i></button>
+                    <button class="login-item"><i class="fab fa-twitter"></i></button>
+                </div>
+            </div>
+
+            <div class="social-input">
+                <div class="input-heading"><div class="input-title">Or continue with</div></div>
+                <div class="input">
+                    <input type="text" class="text-input">
+                    <label class="input-label">Email</label>
+                </div>
+                <div class="input">
+                    <input type="password" class="text-input">
+                    <label class="input-label">Password</label>
+                </div>
+            </div>
+
+            <div class="sign-in-footer">
+                <div class="remember">
+                    <input type="checkbox" class="remember-me">
+                    <label>Remember me</label>
+                </div>
+                <a href="#" class="forgot">Forgot your password?</a>
+            </div>
+
+            <button class="sign-button">Sign In</button>
+
+            <div class="no-account">Don't have an account?<a  href="/pages/auth/signup.html" class="sign-up-link">Sign up Now!</a></div>
+
+        </div>
+    </main>
+
+</body>
+</html>
