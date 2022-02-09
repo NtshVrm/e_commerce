@@ -70,7 +70,11 @@
   /* margin: 0 0 0 2rem; */
 }
 
-.item-price {
+.item-rating {
+  max-height: 8rem;
+}
+
+.item-price{
   max-height: 8rem;
 }
 
