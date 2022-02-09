@@ -1,306 +1,290 @@
 @import url("/reset.css");
 @import url("/index.css");
 
-
-.product-container{
-    display: grid;
-    grid-template-rows: 0.5fr 4fr;
-    grid-template-areas: 
+.product-container {
+  display: grid;
+  grid-template-rows: 0.5fr 4fr;
+  grid-template-areas:
     "listing-header"
-    "listing-container"
-    ;
-    height: 100vh;
+    "listing-container";
+  height: 100vh;
 }
 
-.listing-header{
-    grid-area: listing-header;
-    display: flex;
-    align-items: center;
-    background-color: lightgray;
-    justify-content: space-between;
-    text-transform: uppercase;
-    padding: 1rem;
+.listing-header {
+  grid-area: listing-header;
+  display: flex;
+  align-items: center;
+  background-color: lightgray;
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding: 1rem;
 }
 
-.listing-heading{
-    font-size: 2rem;
-    font-weight: bold;
+.listing-heading {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-.sort-text{
-    font-size: 1rem;
-    font-weight: bold;
-    /* background-color: blue; */
-    padding: 0.5rem;
+.sort-text {
+  font-size: 1rem;
+  font-weight: bold;
+  /* background-color: blue; */
+  padding: 0.5rem;
 }
 
-.sort{
-    border: none;
-    background-color: transparent;
-    font-size: 01rem;
+.sort {
+  border: none;
+  background-color: transparent;
+  font-size: 01rem;
 }
 
-.listing-container{
-    background-color:  white;
-    grid-area: listing-container;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-areas: 
-    "filter card"
-    ;
+.listing-container {
+  background-color: white;
+  grid-area: listing-container;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas: "filter card";
 }
-
-
 
 /* FILTER CONTAINER */
-.filter-container{
-    grid-area: filter;
-    display: flex;
-    flex-flow: column;
-    padding: 1rem;
-    gap: 1rem;
-    
+.filter-container {
+  grid-area: filter;
+  display: flex;
+  flex-flow: column;
+  padding: 1rem;
+  gap: 1rem;
 }
 
-.filter-heading{
-    font-size: 2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-bottom: 2px solid var(--primary-color);;
-    padding-bottom: 1rem;
-    color: var(--primary-color);
+.filter-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 1rem;
+  color: var(--primary-color);
 }
 
-.price-slider{
-    display: flex;
-    width: 100%;
-    /* margin: 0 0 0 2rem; */
+.price-slider {
+  display: flex;
+  width: 100%;
+  /* margin: 0 0 0 2rem; */
 }
 
-.item-price{
-    max-height: 8rem;
+.item-price {
+  max-height: 8rem;
 }
 
 .slider {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 15px;
-    border-radius: 5px;  
-    background: #d3d3d3;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-  }
-  
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%; 
-    background: var(--primary-color);
-    cursor: pointer;
-  }
-  
-  .slider::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background: var(--primary-color);
-    cursor: pointer;
-  }
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
 
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  cursor: pointer;
+}
 
-.filter-item{
-    display: grid;
-    grid-template-rows: 0.5fr 2fr;
-    grid-template-areas: 
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  cursor: pointer;
+}
+
+.filter-item {
+  display: grid;
+  grid-template-rows: 0.5fr 2fr;
+  grid-template-areas:
     "filter-title"
-    "filter-list"
-    ;
-    gap: 1rem;
-    border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 1rem;
+    "filter-list";
+  gap: 1rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 1rem;
 }
 
-.filter-item-closed{
-    display: grid;
-    grid-template-rows: 0.1fr 0fr;
-    grid-template-areas: 
+.filter-item-closed {
+  display: grid;
+  grid-template-rows: 0.1fr 0fr;
+  grid-template-areas:
     "filter-title"
-    "filter-list"
-    ;
-    gap: 1rem;
-    max-height: 4rem;
-    border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 1rem;
-    
+    "filter-list";
+  gap: 1rem;
+  max-height: 4rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 1rem;
 }
 
-.filter-item-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
+.filter-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
 }
 
-.filter-title{
-    grid-area: filter-title;
-    font-size: 1.5rem;
-    text-transform: uppercase;
+.filter-title {
+  grid-area: filter-title;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
-.filter-icon{
-    background-color: lightgray;
-    display: flex;  
-    border-radius: 50%;
-    padding: 0.2rem;
-    height: 15px;
-    width: 15px;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.7rem; 
+.filter-icon {
+  background-color: lightgray;
+  display: flex;
+  border-radius: 50%;
+  padding: 0.2rem;
+  height: 15px;
+  width: 15px;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
 }
 
-.filter-list{
-    grid-area: filter-list;
-    display: flex;
-    flex-flow: column;
-    gap: 0.5rem;
-    /* background-color: yellow; */
-    margin: 0 0 0 2rem;
+.filter-list {
+  grid-area: filter-list;
+  display: flex;
+  flex-flow: column;
+  gap: 0.5rem;
+  /* background-color: yellow; */
+  margin: 0 0 0 2rem;
 }
 
-.filter-option{
-    display: flex;
-    gap: 1rem;
+.filter-option {
+  display: flex;
+  gap: 1rem;
 }
 
-.card-listing-container{
-    grid-area: card;
-    background-color: lightgray;
-    padding-left: 1rem;
-    display: flex;
-    gap: 1rem;
-    flex-flow: wrap;
-    /* min-height: fit-content; */
+.card-listing-container {
+  grid-area: card;
+  background-color: lightgray;
+  padding-left: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-flow: wrap;
+  /* min-height: fit-content; */
 }
 
-.card-container{
-    display: flex;
-    flex-flow: column;
-    background-color: white;
-    min-width: 250px;
-    height: fit-content;
-    padding: 1rem;
-    gap: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    position: relative;
+.card-container {
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+  min-width: 250px;
+  height: fit-content;
+  padding: 1rem;
+  gap: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  position: relative;
 }
 
-.card-with-badge{
-    position: relative;
+.card-with-badge {
+  position: relative;
 }
-  
+
 .card-with-badge::after {
-position: absolute;
-content: "NEW";
-top: 0.5rem;
-right: -0.5rem;
-padding: 0.3rem;
-width: 5rem;
-background: var(--primary-color);
-font-family: "Oxygen", sans-serif;
-color: white;
-font-weight: bold;
-text-align: center;
-box-shadow: 4px 4px 15px rgba(26, 35, 126, 0.2);
-z-index: 0;
+  position: absolute;
+  content: "NEW";
+  top: 0.5rem;
+  right: -0.5rem;
+  padding: 0.3rem;
+  width: 5rem;
+  background: var(--primary-color);
+  font-family: "Oxygen", sans-serif;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 4px 4px 15px rgba(26, 35, 126, 0.2);
+  z-index: 0;
 }
 
-.wishlist{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top:0.5rem;
-    left:0.5rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-    background-color: lightgray;
-    border-radius: 50%;
-    padding: 0.3rem;
-    height: 25px;
-    width: 25px;
-    color:black;
+.wishlist {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0.5rem;
+  left: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: lightgray;
+  border-radius: 50%;
+  padding: 0.3rem;
+  height: 25px;
+  width: 25px;
+  color: black;
 }
 
-.wishlist:hover{
-    color: var(--primary-color);
+.wishlist:hover {
+  color: var(--primary-color);
 }
 
-.card-image{
-    display: flex;
-    justify-content: center;
+.card-image {
+  display: flex;
+  justify-content: center;
 }
 
-.card-description{
-    display: flex;
-    flex-flow: column;
-    gap: 0.5rem;
-    align-items: center;
+.card-description {
+  display: flex;
+  flex-flow: column;
+  gap: 0.5rem;
+  align-items: center;
 }
 
-.card-title{
-    font-weight: bold;
-    font-size: 1.1rem;
-    text-transform: uppercase;
+.card-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
 }
 
-.card-price{
-    display: flex;
-    font-size: 1.2rem;
-    font-weight: bold;
-    gap: 1rem;
-    color: green;
+.card-price {
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: bold;
+  gap: 1rem;
+  color: green;
 }
 
-.card-price-discount{
-    color: red;
+.card-price-discount {
+  color: red;
 }
 
-.img{
-    max-height: 230px;
-    max-width: 230px;
+.img {
+  max-height: 230px;
+  max-width: 230px;
 }
 
-.card-button{
-    border: none;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    font-size: 1.2rem;
-    background-color: var(--primary-color);
-    padding: 0.5rem;
-    width: 100%;
-    color: white;
-    cursor: pointer;
+.card-button {
+  border: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  width: 100%;
+  color: white;
+  cursor: pointer;
 }
 
+@media screen and (max-width: 800px) {
+  .listing-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "card";
+  }
 
-@media screen and (max-width : 800px){
-
-    .listing-container{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "card"
-        ;
-    }
-
-    .filter-container{
-        display: none;
-        visibility: hidden;
-    }
+  .filter-container {
+    display: none;
+    visibility: hidden;
+  }
 }
-
