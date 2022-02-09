@@ -7,11 +7,12 @@
   --primary-color: #ef4444;
   --secondary-color: white;
 
+  --background: #fee2e2;
   /* --nav-bg: #a78bfa; */
   /* --nav-color: #ef4444; */
 }
 
-body {
+.body {
   display: grid;
   /* grid-template-rows: 0.3fr 4fr; */
   grid-template-areas:
@@ -136,7 +137,7 @@ main{
 }
 
 .home-container {
-  background-color: #fee2e2;
+  background-color: var(--background);
   display: grid;
   grid-template-areas:
     "banner"
@@ -521,4 +522,13 @@ main{
   flex-flow: row;
   justify-content: space-around;
   align-items: center;
+}
+
+
+@media screen and (max-width : 800px){
+    
+  .nav-brand{
+    display: none;
+    visibility: hidden;
+  }
 }

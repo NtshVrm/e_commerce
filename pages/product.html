@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://infinityui.netlify.app/allstyles.css"> -->
+    <link rel="stylesheet" href="/pages/product.css" >
+    <script
+      src="https://kit.fontawesome.com/f80c68505b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Product</title>
+</head>
+
+
+<body>
+    <header class="navbar">
+        <div class="nav-brand">
+            <img class="nav-logo hidden" src="https://picsum.photos/1000/400"></img>
+            <div class="nav-name">SlipStream</div>
+        </div>
+        <div class="nav-icons">
+          <div class="searchbar">
+            <input class="search-input" type="search">
+            <div class="search-logo"><i class="fas fa-search"></i></div>
+          </div>
+            <a class="icon" href="#"><i class="far fa-heart"></i></a>
+            <a class="icon" href="#" ><i class="fas fa-shopping-bag"></i></a>
+            <a class="icon" href="#" ><i class="far fa-user"></i></a>
+        </div>
+    </header>
+
+
+    <main class="product-container">
+        <div class="listing-header">
+            <div class="listing-heading">Products</div>
+            <label for="sort" class="sort-text">Sort
+            <select name="sort" id="sort" class="sort">
+                <option value="popular" selected>Most Popular</option>
+                <option value="rating">Best Rating</option>
+                <option value="newest">Newest</option>
+                <option value="popular">Price: Low to High</option>
+                <option value="popular">Price: High to Low</option>
+            </select>
+            </label>
+        </div>
+        <div class="listing-container">
+            <div class="filter-container">
+                <div class="filter-heading">Filters</div>
+
+                <div class="filter-item item-price">
+                    <div class="filter-item-header">
+                        <div class="filter-title">Price</div>
+                    </div>
+
+                    <div class="price-slider">
+                        <input type="range" min="$10" max="$100" value="$50" class="slider" >
+                    </div>
+                </div>
+
+
+                <div class="filter-item">
+                    <div class="filter-item-header">
+                        <div class="filter-title">Colors</div>
+                        <div class="filter-icon"><i class="fas fa-minus"></i></div>
+                    </div>
+                    <div class="filter-list">
+                        <div class="filter-option"><input type="checkbox"><label>Red</label></div>
+                        <div class="filter-option"><input type="checkbox"><label>Blue</label></div>
+                        <div class="filter-option"><input type="checkbox"><label>Orange</label></div>
+                        <div class="filter-option"><input type="checkbox"><label>White</label></div>
+                        <div class="filter-option"><input type="checkbox"><label>Black</label></div>
+                    </div>
+                </div>
+
+
+                <div class="filter-item-closed">
+                    <div class="filter-item-header">
+                        <div class="filter-title">Gender</div>
+                        <div class="filter-icon"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="filter-list hidden">
+                        <div class="filter-option"><input type="checkbox"><label>Men</label></div>
+                        <div class="filter-option"><input type="checkbox"><label>Women</label></div>
+                        <div class="filter-option"><input type="checkbox"><label>Unisex</label></div>
+                    </div>
+                </div>
+
+
+                <div class="filter-item">
+                    <div class="filter-item-header">
+                        <div class="filter-title">Sizes</div>
+                        <div class="filter-icon"><i class="fas fa-minus"></i></div>
+                    </div>
+                    <div class="filter-list">
+                        <div class="filter-option"><input type="checkbox"><label>S</label></div>
+                        <div class="filter-option"><input type="checkbox"><label>M</label></div>
+                        <div class="filter-option"><input type="checkbox"><label>L</label></div>
+                        <div class="filter-option"><input type="checkbox"><label>XL</label></div>
+                    </div>
+                </div>
+
+            </div>
+    
+           <div class="card-listing-container">
+
+                <div class="card-container card-with-badge">
+
+                    <div class="wishlist"><i class="far fa-heart"></i></div>
+
+                    <div class="card-image"><img class="img" src="/images/max-verstappen-helmet.png" alt="img"></div>
+                    <div class="card-description">
+                        <div class="card-title">Max Verstappen Hemlet</div>
+                        <div class="card-price">$59.99 
+                            <del class="card-price-discount">$99.99</del>
+                        </div>
+                    </div>
+
+                    <div class="add-to-cart">
+                        <button class="card-button"><i class="fas fa-shopping-bag"></i>Add to Bag</button>
+                    </div>
+                </div>
+
+
+                <div class="card-container">
+                    <div class="wishlist"><i class="far fa-heart"></i></div>
+                    <div class="card-image"><img class="img" src="/images/mclaren-hoodie.jpg" alt="img"></div>
+                    <div class="card-description">
+                        <div class="card-title">McLaren Hoodie</div>
+                        <div class="card-price">$79.99 
+                            <del class="card-price-discount">$149.99</del>
+                        </div>
+                    </div>
+
+                    <div class="add-to-cart">
+                        <button class="card-button"><i class="fas fa-shopping-bag"></i>Add to Bag</button>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="wishlist"><i class="far fa-heart"></i></div>
+                    <div class="card-image"><img class="img" src="/images/cap-ferrari.png" alt="img"></div>
+                    <div class="card-description">
+                        <div class="card-title">Ferrari Cap</div>
+                        <div class="card-price">$29.99 
+                            <del class="card-price-discount">$49.99</del>
+                        </div>
+                    </div>
+
+                    <div class="add-to-cart">
+                        <button class="card-button"><i class="fas fa-shopping-bag"></i>Add to Bag</button>
+                    </div>
+                </div>
+
+           </div>
+
+           
+
+        </div>
+    </main>
+    
+</body>
+
+
+</html>
