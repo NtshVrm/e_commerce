@@ -15,7 +15,6 @@
 
 .cart-items{
     display: grid;
-    background-color: aqua;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "cards summary"
@@ -29,7 +28,6 @@
 
 .cart-summary{
     grid-area: summary;
-    background-color: blueviolet;
     display: grid;
     grid-template-rows: 2fr 3fr;
     grid-template-areas: 
@@ -40,19 +38,19 @@
 
 .shipping{
     grid-area: shipping;
-    background-color: salmon;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "address secondary-info";
+    border-bottom: 1px solid var(--primary-color);
 }
 
 .address{
     grid-area: address;
-    background-color: gold;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
     padding: 1rem;
+    border-right: 1px solid var(--primary-color);
 }
 
 .address-title{
@@ -83,21 +81,21 @@
 
 .secondary-info{
     grid-area: secondary-info;
-    background-color: lightgreen;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    "detail"
+    "update"
     "pay-info"
     ;
 }
 
 .update{
-    grid-area: detail;
+    grid-area: update;
     background-color: white;
     display: flex;
     flex-flow: column;
     padding: 0.5rem 1rem 0.5rem 1rem;
+    border-bottom: 1px solid var(--primary-color);
 }
 .update-title{
     text-transform: uppercase;
@@ -134,7 +132,6 @@
 
 .pay-detail{
     grid-area: pay-info;
-    background-color: violet;
     display: flex;
     flex-flow: column;
     padding: 0.5rem 1rem 0.5rem 1rem;
