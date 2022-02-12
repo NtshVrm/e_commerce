@@ -21,16 +21,6 @@
     color: var(--primary-color);
 }
 
-.delete{
-        position: absolute;
-    font-size: 1.5rem;
-    right: 0.5rem;
-    top: 0.5rem;
-    color: var(--primary-color);
-    cursor: pointer;
-}
-
-
 .add-to-cart{
     display: flex;
     justify-content: space-between;
