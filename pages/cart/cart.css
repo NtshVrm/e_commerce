@@ -42,7 +42,7 @@
 .horizontal-card{
     background-color: white;
     display: flex;
-    width: 100%;
+    width: fit-content;
     position: relative;
 }
 
