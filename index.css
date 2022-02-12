@@ -12,6 +12,10 @@
   /* --nav-color: #ef4444; */
 }
 
+*{
+  font-family: 'Raleway', sans-serif;
+}
+
 .body {
   display: grid;
   /* grid-template-rows: 0.3fr 4fr; */
