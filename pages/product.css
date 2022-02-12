@@ -1,6 +1,10 @@
 @import url("/reset.css");
 @import url("/index.css");
 
+*{
+  font-family: 'Raleway', sans-serif;
+}
+
 .product-container {
   display: grid;
   grid-template-rows: 0.5fr 4fr;
@@ -28,14 +32,14 @@
 .sort-text {
   font-size: 1rem;
   font-weight: bold;
-  /* background-color: blue; */
   padding: 0.5rem;
 }
 
 .sort {
   border: none;
   background-color: transparent;
-  font-size: 01rem;
+  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
 }
 
 .listing-container {
@@ -170,7 +174,6 @@
   display: flex;
   flex-flow: column;
   gap: 0.5rem;
-  /* background-color: yellow; */
   margin: 0 0 0 2rem;
 }
 
@@ -181,113 +184,11 @@
 
 .card-listing-container {
   grid-area: card;
-  background-color: lightgray;
-  padding-left: 1rem;
-  display: flex;
-  gap: 1rem;
-  flex-flow: wrap;
-  /* min-height: fit-content; */
+  padding: 0 0 0 1rem;
 }
 
-.card-container {
-  display: flex;
-  flex-flow: column;
-  background-color: white;
-  min-width: 250px;
-  height: fit-content;
-  padding: 1rem;
-  gap: 1rem;
+.card-container{
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  position: relative;
-}
-
-.card-with-badge {
-  position: relative;
-}
-
-.card-with-badge::after {
-  position: absolute;
-  content: "NEW";
-  top: 0.5rem;
-  right: -0.5rem;
-  padding: 0.3rem;
-  width: 5rem;
-  background: var(--primary-color);
-  font-family: "Oxygen", sans-serif;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  box-shadow: 4px 4px 15px rgba(26, 35, 126, 0.2);
-  z-index: 0;
-}
-
-.wishlist {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 0.5rem;
-  left: 0.5rem;
-  font-size: 1.5rem;
-  cursor: pointer;
-  background-color: lightgray;
-  border-radius: 50%;
-  padding: 0.3rem;
-  height: 25px;
-  width: 25px;
-  color: black;
-}
-
-.wishlist:hover {
-  color: var(--primary-color);
-}
-
-.card-image {
-  display: flex;
-  justify-content: center;
-}
-
-.card-description {
-  display: flex;
-  flex-flow: column;
-  gap: 0.5rem;
-  align-items: center;
-}
-
-.card-title {
-  font-weight: bold;
-  font-size: 1.1rem;
-  text-transform: uppercase;
-}
-
-.card-price {
-  display: flex;
-  font-size: 1.2rem;
-  font-weight: bold;
-  gap: 1rem;
-  color: green;
-}
-
-.card-price-discount {
-  color: red;
-}
-
-.img {
-  max-height: 230px;
-  max-width: 230px;
-}
-
-.card-button {
-  border: none;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  font-size: 1.2rem;
-  background-color: var(--primary-color);
-  padding: 0.5rem;
-  width: 100%;
-  color: white;
-  cursor: pointer;
 }
 
 @media screen and (max-width: 800px) {
