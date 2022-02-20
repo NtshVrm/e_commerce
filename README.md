@@ -26,10 +26,74 @@ SlipStream is one stop marketplace for Formula 1 fans, with official merchandise
 
 ### HOME
 
+Link : https://slipstream-shop.netlify.app/
+
 Home page consists of the following sections:
 - Shop by Category
 - Shop by Teams
 - Feature Section about SlipStream
 - Customer Reviews
 
-![image](images/chrome-capture.jpg)
+![image](images/home.jpg)
+
+---
+
+### PRODUCT LISTING
+
+Link : https://slipstream-shop.netlify.app/pages/product-listing/product.html
+
+Product listing page consists of the following sections:
+- Filters (where products can be filtered by ratings, price, category, gender)
+- Sort By (where products can be sorted by Most Popular, Best Rating, Newest)
+- Product cards
+
+![image](images/product-listing.jpg)
+
+---
+
+### CART
+
+Link : https://slipstream-shop.netlify.app/pages/cart/cart.html
+
+Cart page consists of the follwing sections:
+
+- Products added in the cart with quantity information.
+- Delivery Address Management
+- Shipping Update Management
+- Payment Mode Management
+- Order Summary
+
+![image](images/cart.jpg)
+
+---
+
+### WISHLIST
+
+Link : https://slipstream-shop.netlify.app/pages/wishlist/wishlist.html
+
+Wishlist page consists of the follwing sections:
+
+- Products added in the wishlist (with options to move/remove them to/from cart along with quantity information).
+
+![image](images/wishlist.jpg)
+
+---
+
+### AUTH
+
+Auth consists of two parts:
+- Sign In Page : https://slipstream-shop.netlify.app/pages/auth/signin.html
+- Sign Up Page : https://slipstream-shop.netlify.app/pages/auth/signup.html
+
+Sign In page consists of the following sections:
+- Sign In with social like Google, Facebook or Twitter
+- Standard Email and Password login
+- Option to Sign Up of a user does not have an existing account
+
+![image](images/sign-in.jpg)
+
+Sign Up page consists of the following sections:
+ - Sign up with details like (Name, Email, DoB etc)
+ - Option to Sign In if a user already has an account
+
+ ![image](images/sign-up.jpg)
