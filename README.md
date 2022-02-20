@@ -75,7 +75,7 @@ Wishlist page consists of the follwing sections:
 
 - Products added in the wishlist (with options to move/remove them to/from cart along with quantity information).
 
-![image](images/wishlist.jpg)
+![image](images/wishlist-page.jpg)
 
 ---
 
