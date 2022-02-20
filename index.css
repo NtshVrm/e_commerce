@@ -145,8 +145,13 @@ main{
   color: black;
 }
 
+.icon:hover{
+  color: var(--primary-color);
+}
+
+
 .home-container {
-  background-color: var(--background);
+  background-color: lightgray;
   display: grid;
   grid-template-areas:
     "banner"
@@ -181,7 +186,7 @@ main{
 
 
 .banner-image {
-  object-fit: fill;
+  object-fit: cover;
   max-height: 400px;
   width: 100%;
   filter: opacity(50%);
@@ -226,6 +231,7 @@ main{
   font-size: 1rem;
   font-weight: bold;
   color: #ef4444;
+  text-decoration: none;
 }
 
 
@@ -248,12 +254,14 @@ main{
   position: relative;
   align-items: center;
   justify-content: center;
+  background-color: white;
+  cursor: pointer;
 }
 
 .item-img-large {
   width: 100%;
   max-height: 420px;
-  object-fit: fill;
+  object-fit: contain;
   filter: opacity(50%);
 }
 
@@ -261,13 +269,14 @@ main{
   filter : opacity(100%);
 }
 
-
 .item-title {
   position: absolute;
   text-transform: uppercase;
   font-size: 3rem;
   font-weight: bold;
   color:  var(--primary-color);
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .item-small {
@@ -281,7 +290,7 @@ main{
 .item-img-small {
   width: 100%;
   max-height: 200px;
-  object-fit: fill;
+  object-fit: contain;
   filter: opacity(50%);
 }
 
@@ -351,7 +360,7 @@ main{
 }
 
 .feature-desc {
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: black;
 }
 
@@ -400,13 +409,14 @@ main{
   align-items: center;
   justify-content: center;
   position: relative;
+  background-color: white;
 }
 
 .team-image-large {
   width: 100%;
   max-height: 400px;
-  object-fit: fill;
-  filter: opacity(50%);
+  object-fit: cover;
+  filter: opacity(30%);
 }
 
 .team-image-large:hover{
@@ -417,7 +427,7 @@ main{
   width: 100%;
   max-height: 200px;
   object-fit: fill;
-  filter: opacity(50%);
+  filter: opacity(30%);
 }
 
 .team-image-small:hover{
@@ -429,6 +439,7 @@ main{
   font-weight: bold;
   color: var(--primary-color);
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .team-title-large{
