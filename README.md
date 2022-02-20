@@ -17,7 +17,7 @@ SlipStream is one stop marketplace for Formula 1 fans, with official merchandise
 ## Features
 
 - [Home](#home)
-- [Product Listing](#product)
+- [Product Listing](#product listing)
 - [Cart](#cart)
 - [Wishlist](#wishlist)
 - [Auth](#auth)
